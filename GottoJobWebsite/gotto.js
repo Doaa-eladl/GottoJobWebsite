@@ -47,23 +47,23 @@ window.addEventListener('load', ()=>{
 })
 
 function increasecontent(){
-
-    var refreshIntervalId = setInterval(() => {        
-        lowcount ++
-        Dailyactiveusers.textContent = lowcount
-
-        highcount += 37.5
-        Openingjobs.textContent = highcount
-
+    var refreshIntervalId = setInterval(() => {
         if(highcount==450 || lowcount==12){
             clearInterval(refreshIntervalId);
         }
-      }, "80");
+        else{
+            lowcount ++
+            Dailyactiveusers.textContent = lowcount
+    
+            highcount += 37.5
+            Openingjobs.textContent = highcount
+        }
+      }, "40");
 }
 
 window.addEventListener('scroll',()=>{
     //to run just one time
-    if(window.scrollY>3574 && (highcount==0 || lowcount==0)){
+    if(window.scrollY>2400 && (highcount==0 || lowcount==0)){
         increasecontent()
     }
 })
