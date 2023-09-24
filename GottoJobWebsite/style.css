@@ -1,0 +1,298 @@
+main{
+    height: 460vh;
+}
+main.show{
+    height: 510vh;
+}
+
+
+main>section:nth-child(2){
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+main>section:nth-child(2)>iframe{
+    height: 50vh;
+    width: 92vw;
+    max-width: 500px;
+    margin: 0px 10px;
+    border-radius: 22px;
+    /*it does work, but you should also add the formatting that the different browsers require for grayscale.*/
+    /*اول مره استخدم فلتر دايما بستحدم الباكجراوند كلر واغير الاباستي او البوكس شادو*/
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+main>section:nth-child(3){
+    margin-top: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactcard{
+    display: flex;
+    justify-content: start;
+    gap: 22px;
+    margin: 20px 0px;
+    align-items: center;
+    padding: 30px 25px;
+    max-width: 540px;
+    width: 65vw;
+}
+.contactcard>i{
+    font-size: 50px;
+    color: #5d52ba;
+}
+.contactcard>p{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+    letter-spacing: .8px;
+    color: #717275e0;
+}
+.contactcard>p>strong{
+    font-size: 15px;
+    color: #0dcaf0;
+}
+.contactcard:nth-child(even){
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+.contactcard>p>a{
+    font-size: 18px;
+    color: #717275e0;
+    text-decoration: none;
+}
+.contactcard>p>a:hover{
+    color: #f65129;
+}
+
+main>section:nth-child(4){
+    margin-top: 4rem;
+}
+main>section:nth-child(4)>form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+main>section:nth-child(4)>form>h2{
+    align-self: center;
+    font-size: 1.6rem;
+    letter-spacing: -1px;
+}
+main>section:nth-child(4)>form>p{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px;
+    max-width: 540px;
+    width: 74vw;
+}
+main>section:nth-child(4)>form>p>label{
+    color: #212529;
+    font-weight: 400;
+}
+main>section:nth-child(4)>form>p>input::placeholder,
+textarea::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'League Spartan';
+}
+main>section:nth-child(4)>form>p>input,
+main>section:nth-child(4)>form>p>textarea{
+    padding: 20px;
+    border-radius: 30px;
+    border: solid 2px transparent;
+    background-color: aliceblue;
+    transition: all .3s ease-out;
+}
+main>section:nth-child(4)>form>p>input:hover,
+main>section:nth-child(4)>form>p>textarea:hover{
+    background-color: white;
+    border: solid 2px #5d52ba;
+    transition: all .3s ease-out;
+}
+main>section:nth-child(4)>form>button{
+    width: 50vw;
+    padding: 20px 15px;
+    border-radius: 30px;
+    border: transparent;
+    background-color: #5d52ba;
+    color: white;
+    font-family: 'League Spartan';
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    max-width: 280px;
+    transition: all .3s ease-out;
+}
+main>section:nth-child(4)>form>button:hover{
+    background-color: #0dcaf0;
+    transition: all .3s ease-out;
+}
+
+
+
+@media only screen and (min-width: 360px){
+    main {
+        height: 396vh;
+    }
+    main.show {
+        height: 444vh;
+    }
+}
+@media only screen and (min-width: 480px) {
+main>section:nth-child(4)>form>h2 {
+    font-size: 36px;
+}
+}
+@media only screen and (min-width: 768px) {
+    main {
+        height: 332vh;
+    }
+    main.show {
+        height: 375vh;
+    }
+    main>section:nth-child(2)>iframe {
+        max-width: 720px;
+    }
+    .contactcard {
+        max-width: 720px;
+        width: 84vw;
+    }
+    main>section:nth-child(4)>form {
+        display: grid;
+        width: 97vw;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "title title"
+            "input1 input2"
+            "message message"
+            "btn btn";
+        justify-content: center;
+        gap: 16px 5px;
+        align-items: center;
+    }
+    main>section:nth-child(4)>form>h2 {
+       grid-area: title;
+        text-align: center;
+    }
+    main>section:nth-child(4)>form>p:nth-child(2) {
+        grid-area: input1;
+        max-width: 720px;
+        width: auto;
+    }
+    main>section:nth-child(4)>form>p:nth-child(3) {
+        grid-area: input2;
+        max-width: 720px;
+        width: auto;
+    }
+    main>section:nth-child(4)>form>p:nth-child(4) {
+        grid-area: message;
+        width: 89vw;
+        max-width: 720px;
+    }
+    main>section:nth-child(4)>form>button {
+        grid-area: btn;
+        justify-self: center;
+        width: 30vw;
+    }
+}
+@media only screen and (min-width: 991px) {
+    main>section:nth-child(2)>iframe {
+        height: 20vh;
+    }
+}
+@media only screen and (min-width: 992px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(2,minmax(auto,496px));
+        grid-template-rows: 376px 600px 425px 515px 360px;
+        height: 305vh;
+    }
+    main>section:nth-child(2) {
+        grid-area: 2/1/2/2;
+        margin-top: 5rem;
+        width: 54vw;
+        justify-content: flex-end;
+    }
+    main>section:nth-child(2)>iframe {
+        max-width: 480px;
+        height: 63vh;
+        width: 43vw;
+        margin: 0px 30px;
+    }
+    main>section:nth-child(3) {
+        grid-area: 2/2/3/3;
+        gap: 2rem;
+        margin-top: 5rem;
+        align-items: baseline;
+        width: 44vw;
+    }
+    .contactcard {
+        margin: 0px;
+        padding: 20px;
+        width: 28vw;
+        max-width: 496px;
+    }
+    main>section:nth-child(4) {
+        margin-top: 2rem;
+        grid-area: 3/1/4/3;
+        justify-self: center;
+    }
+    main>section:nth-child(4)>form>h2 {
+        font-size: 48px;
+    }
+    main>section:nth-child(4)>form {
+       width: 80vw;
+       grid-template-columns: 300px 300px;
+    }
+    main>section:nth-child(4)>form>p:nth-child(4) {
+        width: 60vw;
+    }
+    main>section:nth-child(4)>form>button {
+        width: 20vw;
+    }
+    main>section:nth-child(4)>form>p:nth-child(4) {
+        width: 61vw;
+        max-width: 610px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    main{
+        height: 315vh;
+    }
+    main>section:nth-child(2) {
+        width: 50vw;
+    }
+    main>section:nth-child(3) {
+        width: 44vw;
+        justify-self: right;
+        margin-left: 0px;
+    }
+    main>section:nth-child(2)>iframe {
+        max-width: 615px;
+        width: 55vw;
+        margin: 0px 3rem 0 0 ;
+    }
+    .contactcard{
+        padding: 20px 40px;
+    }
+    main>section:nth-child(4)>form {
+        gap: 16px 30px;
+        grid-template-columns: minmax(360px,400px) minmax(360px,400px);
+    }
+    main>section:nth-child(4)>form>p:nth-child(4) {
+        width: 70vw;
+        max-width: 835px;
+    }
+}
+/*
+همبورجر منيو
+*/

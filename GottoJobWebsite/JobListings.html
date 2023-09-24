@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://www.tooplate.com/templates/2134_gotto_job/images/logo.png">
+
+    <!--important to use fontawasem v6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="jobliststyle.css">
+    <title>Gotto job</title>
+</head>
+<body onload="onloadJOBListingpage()">
+    <header>
+        <div>
+            <a href="#">
+                <img src="https://www.tooplate.com/templates/2134_gotto_job/images/logo.png" alt="logo">
+                <div>
+                    <strong>Gotto</strong>
+                    <small>Online Job Portal</small>
+                </div>
+            </a>
+            <button>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">About Gotto</a></li>
+                <li>Pages<i class="fa fa-thin fa-chevron-down"></i>
+                    <ul>
+                        <li><a href="#">Job Listings</a></li>
+                        <li><a href="JobDetails.html">Job Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="">Register</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <section>
+            <h1>Job Listing</h1>
+            <p>
+                <button><a href="Home.html">Home /</a></button>
+                Job Listing
+            </p>
+        </section>
+        <section>
+            <h2>Search your dream job</h2>
+            <form>
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" name="jobtitle" id="jobtitle" placeholder="Job Title" required>
+                </div>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" name="location" id="location" placeholder="Location" required>
+                </div>
+                <div>
+                    <i class="fa-regular fa-money-bill-1"></i>
+                    <select name="salary" id="salary">
+                        <option selected>Salary Rang</option>
+                        <option value="1">$300k - $500k</option>
+                        <option value="2">$10000k - $45000k</option>
+                    </select>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <select name="Level" id="Level">
+                        <option selected>Level</option>
+                        <option value="1">Internship</option>
+                        <option value="2">Junior</option>
+                        <option value="3">Senior</option>
+                    </select>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <select name="joptype" id="joptype">
+                        <option selected>Remote</option>
+                        <option value="1">Full Time</option>
+                        <option value="2">Contract</option>
+                        <option value="3">Part Time</option>
+                    </select>
+                </div>
+                <button type="submit">Search job</button>
+            </form>
+            <div>
+                <p>Popular keywords:</p>
+                <div>
+                    <a href="#">Web design</a>
+                    <a href="#">Marketing</a>
+                    <a href="#">Customer support</a>
+                </div>
+            </div>
+        </section>
+        </section>
+        <section>
+            <div>
+                <h2>Results of 30-65 of 1500 jobs</h2>
+                <div>
+                    <p>Sort by:</p>
+                    <button class="shownestedjoblist">Newest Jobs</button>
+                    <ul class="nestedjobs">
+                        <li><a href="#">Lastest Jobs</a></li>
+                        <li><a href="#">Highed Salary Jobs</a></li>
+                        <li><a href="#">Internship Jobs</a></li>
+                    </ul>
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    <a href="#"><i class="fa-solid fa-border-all"></i></a>
+                </div>
+            </div>
+            <div>
+                <div class="container">
+                    <div>
+                        <a href="JobDetails.html"><img src="https://www.tooplate.com/templates/2134_gotto_job/images/jobs/it-professional-works-startup-project.jpg" alt=""></a>
+                        <div>
+                            <a href="#">Internship</a>
+                            <a href="#">Freelance</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="JobDetails.html"><h3>Technical Lead</h3></a>
+                        <div>
+                            <div>
+                                <img src="https://www.tooplate.com/templates/2134_gotto_job/images/logos/salesforce.png" alt="">
+                                <p>Salesforce</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-bookmark"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p><i class="fa-solid fa-location-dot"></i>Kuala, Malaysia</p>
+                            <p><i class="fa-regular fa-clock"></i>10 hours ago</p>
+                        </div>
+                        <div>
+                            <p><i class="fa-regular fa-money-bill-1"></i>$50k</p>
+                            <a href="JobDetails.html">Apply now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div>
+                        <a href="JobDetails.html"><img src="https://www.syntacticsinc.com/wp-content/uploads/2021/07/Why-You-Should-Hire-a-Marketing-Assistant-1024x538.jpg" alt=""></a>
+                        <div>
+                            <a href="#">Senior</a>
+                            <a href="#">Part Time</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="JobDetails.html"><h3>Marketing Assistant</h3></a>
+                        <div>
+                            <div>
+                                <img src="https://www.tooplate.com/templates/2134_gotto_job/images/logos/spotify.png" alt="">
+                                <p>Spotify</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-bookmark"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p><i class="fa-solid fa-location-dot"></i>California, USA</p>
+                            <p><i class="fa-regular fa-clock"></i>8 days ago</p>
+                        </div>
+                        <div>
+                            <p><i class="fa-regular fa-money-bill-1"></i>$20k</p>
+                            <a href="JobDetails.html">Apply now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div>
+                        <a href="JobDetails.html"><img src="https://www.tooplate.com/templates/2134_gotto_job/images/jobs/coding-man.jpg" alt=""></a>
+                        <div>
+                            <a href="#">Junior</a>
+                            <a href="#">Contract</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="JobDetails.html"><h3>Programmer</h3></a>
+                        <div>
+                            <div>
+                                <img src="https://www.tooplate.com/templates/2134_gotto_job/images/logos/twitter.png" alt="">
+                                <p>Twiter</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-bookmark"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p><i class="fa-solid fa-location-dot"></i>California, USA</p>
+                            <p><i class="fa-regular fa-clock"></i>23 hours ago</p>
+                        </div>
+                        <div>
+                            <p><i class="fa-regular fa-money-bill-1"></i>$68k</p>
+                            <a href="JobDetails.html">Apply now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div>
+                        <a href="JobDetails.html"><img src="https://www.contractrecruiter.com/wp-content/uploads/2020/08/Manager-for-HR.jpg.webp" alt=""></a>
+                        <div>
+                            <a href="#">Junior</a>
+                            <a href="#">Contract</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="JobDetails.html"><h3>HR Manager</h3></a>
+                        <div>
+                            <div>
+                                <img src="https://www.tooplate.com/templates/2134_gotto_job/images/logos/yelp.png" alt="">
+                                <p>Yelp</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-bookmark"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p><i class="fa-solid fa-location-dot"></i>California, USA</p>
+                            <p><i class="fa-regular fa-clock"></i>15 hours ago</p>
+                        </div>
+                        <div>
+                            <p><i class="fa-regular fa-money-bill-1"></i>$35k - 45k</p>
+                            <a href="JobDetails.html">Apply now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div>
+                        <a href="JobDetails.html"><img src="https://www.tooplate.com/templates/2134_gotto_job/images/jobs/paper-analysis.jpg" alt=""></a>
+                        <div>
+                            <a href="#">Entry</a>
+                            <a href="#">Remote</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="JobDetails.html"><h3>Sales Representative</h3></a>
+                        <div>
+                            <div>
+                                <img src="https://www.tooplate.com/templates/2134_gotto_job/images/logos/paypal.png" alt="">
+                                <p>Paypal</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-bookmark"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p><i class="fa-solid fa-location-dot"></i>Bangkok, Thailand</p>
+                            <p><i class="fa-regular fa-clock"></i>30 mins ago</p>
+                        </div>
+                        <div>
+                            <p><i class="fa-regular fa-money-bill-1"></i>$20k - 35k</p>
+                            <a href="JobDetails.html">Apply now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div>
+                        <a href="JobDetails.html"><img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/How_to_Become_a_Graphic_Designer.jpg" alt=""></a>
+                        <div>
+                            <a href="#">Mid Level</a>
+                            <a href="#">Full Time</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="JobDetails.html"><h3>Graphic Designer</h3></a>
+                        <div>
+                            <div>
+                                <img src="https://www.tooplate.com/templates/2134_gotto_job/images/logos/envato.png" alt="">
+                                <p>Envato</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-bookmark"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p><i class="fa-solid fa-location-dot"></i>Melbourne, Australia</p>
+                            <p><i class="fa-regular fa-clock"></i>2 days ago</p>
+                        </div>
+                        <div>
+                            <p><i class="fa-regular fa-money-bill-1"></i>$20k</p>
+                            <a href="JobDetails.html">Apply now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div>
+                        <a href="JobDetails.html"><img src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?w=740&t=st=1692895276~exp=1692895876~hmac=def01f6221038b4369cf354f5ce7b67a52e50c5115dfed93d0b8812c24625566" alt=""></a>
+                        <div>
+                            <a href="#">Senior</a>
+                            <a href="#">Contract</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="JobDetails.html"><h3>Customer Support</h3></a>
+                        <div>
+                            <div>
+                                <img src="https://www.tooplate.com/templates/2134_gotto_job/images/logos/microsoft.png" alt="">
+                                <p>Microsoft</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-bookmark"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p><i class="fa-solid fa-location-dot"></i>Paris, French</p>
+                            <p><i class="fa-regular fa-clock"></i>10 days ago</p>
+                        </div>
+                        <div>
+                            <p><i class="fa-regular fa-money-bill-1"></i>$45k - 50k</p>
+                            <a href="JobDetails.html">Apply now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div>
+                        <a href="JobDetails.html"><img src="https://christianlingua.com/wp-content/uploads/2019/04/psd-cartoon-language-teacher-attending-class-heypik-7XU4545.jpg" alt=""></a>
+                        <div>
+                            <a href="#">Junior</a>
+                            <a href="#">Freelance</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="JobDetails.html"><h3>Language Teacher</h3></a>
+                        <div>
+                            <div>
+                                <img src="https://www.tooplate.com/templates/2134_gotto_job/images/logos/dropbox.png" alt="">
+                                <p>Dropbox</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-bookmark"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p><i class="fa-solid fa-location-dot"></i>Paris, French</p>
+                            <p><i class="fa-regular fa-clock"></i>30 minutes ago</p>
+                        </div>
+                        <div>
+                            <p><i class="fa-regular fa-money-bill-1"></i>$85k</p>
+                            <a href="JobDetails.html">Apply now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div>
+                        <a href="JobDetails.html"><img src="https://www.tooplate.com/templates/2134_gotto_job/images/jobs/sound-engineer-working-studio-with-equipment.jpg" alt=""></a>
+                        <div>
+                            <a href="#">Junior</a>
+                            <a href="#">Remote</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="JobDetails.html"><h3>Sound Engineer</h3></a>
+                        <div>
+                            <div>
+                                <img src="https://www.tooplate.com/templates/2134_gotto_job/images/logos/soundcloud.png" alt="">
+                                <p>Soundcloud</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-bookmark"></i>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p><i class="fa-solid fa-location-dot"></i> Singapore</p>
+                            <p><i class="fa-regular fa-clock"></i>8 hours ago</p>
+                        </div>
+                        <div>
+                            <p><i class="fa-regular fa-money-bill-1"></i>$20k</p>
+                            <a href="JobDetails.html">Apply now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#">prev</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">next</a>
+            </div>
+        </section>
+        <section class="aboutgoto">
+            <h3>Over 10k opening jobs</h3>
+            <p>Gotto Job is a free HTML CSS template for job hunting related websites. This layout is based on the famous Bootstrap 5 CSS framework. Thank you for visiting Tooplate website.</p>
+            <p>
+                <a href="#">Create an account</a>
+                <a href="#">Post a job</a>
+            </p>
+        </section>
+        <section class="connectionmethods">
+            <div>
+                <img src="https://www.tooplate.com/templates/2134_gotto_job/images/logo.png" alt="logo">
+                <div>
+                    <strong>Gotto</strong>
+                    <small>Online Job Portal</small>
+                </div>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-globe"></i><a href="#">www.jobportal.com</a></p>
+                <p><i class="fa-solid fa-phone"></i><a href="tel:3052409671">305-240-9671</a></p>
+                <p><i class="fa-regular fa-envelope"></i><a href="mailto:info@yourgmail.com">info@jobportal.co</a></p>
+            </div>
+            <div>
+                <p>
+                    <strong>Company</strong>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Contact</a>
+                </p>
+                <p>
+                    <strong>Resources</strong>
+                    <a href="#">Guide</a>
+                    <a href="#">How it works</a>
+                    <a href="#">Salary Tool</a>
+                </p>
+            </div>
+            <div>
+                <strong>Newsletter</strong>
+                <form action="">
+                    <h6>Get notified jobs news</h6>
+                    <div>
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" name="Email" id="Email" placeholder="yourname@gmail.com">
+                        <button><i class="fa-regular fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div>
+                <p>Copyright © Gotto Job 2048</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+            <p>Design: <a href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+        </section>
+        <button><i class="fa-solid fa-arrow-up fa-lg"></i></button>
+    </footer>
+    <script src="gotto.js"></script>
+</body>
+</html>
