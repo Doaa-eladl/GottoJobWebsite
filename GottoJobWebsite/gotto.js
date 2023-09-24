@@ -58,7 +58,7 @@ function increasecontent(){
             highcount += 37.5
             Openingjobs.textContent = highcount
         }
-      }, "40");
+      }, "70");
 }
 
 window.addEventListener('scroll',()=>{
